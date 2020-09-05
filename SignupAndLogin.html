@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=#, initial-scale=1.0">
+    <title>Login and Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+            <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="signup()">Sign Up</button>
+            </div>
+            <div class="social-media-icons">
+                <img src="Assets/facebook.png">
+                <img src="Assets/github.png">
+                <img src="Assets/google.png">
+                <img src="Assets/twitter.png">
+            </div>
+            <form action="index.html" method="POST" id="login" class="input-group">
+                <h1>Welcome back!</h1>
+                <input type="text" name="user" class="input-field" placeholder="User ID" required>
+                <input type="password" name="password" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box"><span>Remember Password</span>
+                <button type="submit" class="submit-btn">Log In</button>
+            </form> 
+            <form action="index.html" method="POST" id="signup" class="input-group">
+                <h1>Create New Account</h1>
+                <input type="text" name="First Name" class="input-field" placeholder="First Name" required>
+                <input type="text" name="Last Name" class="input-field" placeholder="Last Name (optional)">
+                <input type="email" name="E-Mail" class="input-field" placeholder="E-Mail Address" required>
+                <input type="text" name="user" class="input-field" placeholder="User ID" required minlength="3" maxlength="20" pattern="[a-zA-Z0-9]+">
+                <input type="password" name="Password" class="input-field" placeholder="Enter Password" required minlength="8" maxlength="15">
+                <input type="checkbox" class="check-box"><span>I agree to the terms and conditions</span>
+                <button type="submit" class="submit-btn">Sign Up</button>
+              </form>
+        </div>
+    </div>
+
+    <script>
+      var x = document.getElementById("login");
+      var y = document.getElementById("signup");
+      var z = document.getElementById("btn");
+
+      function signup() {
+          x.style.left = "-400px";
+          y.style.left = "50px";
+          z.style.left = "110px";
+      }
+      function login() {
+          x.style.left = "50px";
+          y.style.left = "450px";
+          z.style.left = "0";
+      }
+  
+
+    </script>
+
+</body>
+</html>
