@@ -15,9 +15,9 @@ position: absolute;
 
 .form-box{
     width: 380px;
-    height: 480px;
+    height: 580px;
     position: relative;
-    margin: 6% auto;
+    margin: 3% auto;
     background: #fff;
     padding: 5px;
     overflow: hidden;
@@ -85,6 +85,7 @@ position: absolute;
 
 .submit-btn{
     width: 85%;
+    height: 30px;
     padding: 10 px 30px;
     cursor: pointer;
     display: block;
