@@ -7,6 +7,7 @@
 
 .home{
     background: #222;
+    height: 100vh;
 }
 
 .container{
@@ -76,12 +77,32 @@ nav a:hover::before {
 
 .wrap1{
     background-image: linear-gradient(to right, #99b3ff , #cc99ff);
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    
+    place-items: center;
+    padding: 10px 15px;
 }
 
 .wrap1 h1{
     float: left;
+    padding: 0 10px;
+    font-family: verdana;
     
-    
+}
+
+.wrap1 button {
+    float: right;
+    padding: 10px 10px;
+    cursor: pointer;
+    background: #99b3ff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 100%; 
+    border: 0.1;
+    outline: none;
+    position: relative;
+    height: 40px;
 }
 
 
@@ -91,7 +112,7 @@ nav a:hover::before {
 .hero{ 
 height: 100%;
 width: 100%;
-background: #000; /*can also use a gradient i.e*/ /*background-image: linear-gradient(to right, #99b3ff , #cc99ff);*/
+background: #222; /*can also use a gradient i.e*/ /*background-image: linear-gradient(to right, #99b3ff , #cc99ff);*/
 background-size: cover;
 background-position: center;
 position: fixed; /*come check on this position later, whether it fits on a smaller screen. change to absolute?*/
