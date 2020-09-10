@@ -16,6 +16,7 @@
 
 header{
     background: #292929;
+   
 }
 
 header::after {
@@ -29,13 +30,11 @@ header::after {
     padding: 10px 0;
 }
 
-nav {
-    float: right;
-}
 
 nav ul {
+    float: right;
     margin: 0;
-    padding: 0;
+    padding: 5px;
     list-style: none;
 }
 
@@ -75,12 +74,24 @@ nav a:hover::before {
     width: 100%;
 }
 
+.wrap1{
+    background-image: linear-gradient(to right, #99b3ff , #cc99ff);
+}
+
+.wrap1 h1{
+    float: left;
+    
+    
+}
+
+
+
 
 
 .hero{ 
 height: 100%;
 width: 100%;
-background-image: linear-gradient(to right, #99b3ff , #cc99ff);
+background: #000; /*can also use a gradient i.e*/ /*background-image: linear-gradient(to right, #99b3ff , #cc99ff);*/
 background-size: cover;
 background-position: center;
 position: fixed; /*come check on this position later, whether it fits on a smaller screen. change to absolute?*/
