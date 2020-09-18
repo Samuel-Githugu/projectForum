@@ -3,6 +3,7 @@
     padding: 0;
     font-family: sans-serif;
     font-weight: 400;
+    box-sizing: border-box;
 }
 
 .home{
@@ -226,5 +227,38 @@ span{
     margin-bottom: 75px;
     margin-left: 15px;
     margin-right: 15px;
-    color: #fff;
+}
+
+table{
+    display: table;
+    border-color: grey;
+    color: whitesmoke;
+    border-collapse: collapse;
+    box-sizing: border-box;
+    border-spacing: 0;
+}
+
+.topic-list{
+    margin: 0 0 10px;
+    width: 100%;
+    border-collapse: inherit;
+
+}
+
+thead{
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+tr{
+    border-bottom: 1px solid gray;
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+th{
+    color: grey;
+    
 }
