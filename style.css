@@ -229,36 +229,3 @@ span{
     margin-right: 15px;
 }
 
-table{
-    display: table;
-    border-color: grey;
-    color: whitesmoke;
-    border-collapse: collapse;
-    box-sizing: border-box;
-    border-spacing: 0;
-}
-
-.topic-list{
-    margin: 0 0 10px;
-    width: 100%;
-    border-collapse: inherit;
-
-}
-
-thead{
-    display: table-header-group;
-    vertical-align: middle;
-    border-color: inherit;
-}
-
-tr{
-    border-bottom: 1px solid gray;
-    display: table-row;
-    vertical-align: inherit;
-    border-color: inherit;
-}
-
-th{
-    color: grey;
-    
-}
