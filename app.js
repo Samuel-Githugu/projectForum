@@ -1,5 +1,5 @@
 function categoryDrop() {
-    console.log("called||||||\\||I")
+    console.log("called!!!!")
 
     document.getElementById("myDropdown").classList.toggle("show");
   }
