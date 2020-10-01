@@ -5,17 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ProjectForum</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-     <script>
-       function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-     </script>
+    <script src="app.js" type="app/javascript"></script>
 
   </head>
     <body>
@@ -33,9 +23,6 @@
                <li><a href="#">Home</a></li>
                <li><a href="#">About</a></li>
                <li><a href="#">Contact</a></li>
-               <li><a href="javascript:void(0);" class="icono" onclick="myFunction()"></li>
-                <i class="fa fa-bars"></i>
-              </a>
              </ul>
           </div>
         </nav>
@@ -48,8 +35,32 @@
 
         </div>
      </header>
-       <br><br>
+       <br>
       
+        <div class="main-body">
+          <div class="filters">
+            <div class="dropdown">
+           <button onclick="categoryDrop()" class="dropbtn">Categories</button>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="#">link 1</a>
+                <a href="#">link 2</a>
+                <a href="#">link 3</a>
+              </div>
+          </div>
+           <button class="f-btn">💣 Latest</button>
+           <button class="f-btn">🔥 Hot</button>
+           <button class="f-btn">🌟 Best</button>
+          </div>
+           <div class="titlebar">
+          
+          </div>
+           <div class="forum-posts">
+           
+           </div>
+
+        </div>
+
+
        </div>
     </body>
 </html>
