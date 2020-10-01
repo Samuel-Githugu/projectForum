@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ProjectForum</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="app.js" type="application/javascript"></script>
 
   </head>
@@ -42,6 +43,7 @@
             <div class="dropdown">
            <button onclick="categoryDrop()" class="dropbtn">Categories</button>
               <div id="myDropdown" class="dropdown-content">
+                <input type="text" placeholder="Search..." id="myInput" onkeyup="filterFunction()">
                 <a href="#">link 1</a>
                 <a href="#">link 2</a>
                 <a href="#">link 3</a>
@@ -52,7 +54,7 @@
            <button class="f-btn">🌟 Best</button>
           </div>
            <div class="titlebar">
-          
+             
           </div>
            <div class="forum-posts">
            

@@ -347,3 +347,18 @@ span{
     background-color: #51adcf;
     color: #6a2c70;
   }
+
+  #myInput {
+    box-sizing: border-box;
+    background-position: 14px 12px;
+    background-image: url('Assets/searchicon.png');
+    background-size: 25px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 14px 20px 12px 45px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  
+  #myInput:focus {outline: 3px solid #ddd;}
