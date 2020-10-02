@@ -4,6 +4,7 @@
     font-family: sans-serif;
     font-weight: 400;
     box-sizing: border-box;
+    color: white;
 }
 
 .home{
@@ -96,7 +97,12 @@ nav a:hover::before {
     float: left;
     padding: 0 10px;
     font-family: verdana;
+    color: black;
     
+}
+ 
+.wrap1 h1 em {
+    color: black;
 }
 
 .wrap1 button {
@@ -111,6 +117,7 @@ nav a:hover::before {
     outline: none;
     position: relative;
     height: 40px;
+    color: black;
 }
 
 
@@ -285,6 +292,7 @@ span{
      display: flex;
      flex-wrap: wrap;
      flex-direction: column;
+     padding-left: 30px;
  }
 
  .filters {
@@ -360,5 +368,155 @@ span{
     border-bottom: 1px solid #ddd;
   }
   
-  
   #myInput:focus {outline: 3px solid #ddd;}
+
+  .filters::after {
+    content:'';
+    display: table;
+    clear: both;
+  }
+
+  .forum {
+      display: flex;
+      flex-direction: row;
+      margin-left: 30px;
+      margin-right: 50px;
+      padding-bottom: 5px;
+      border-bottom: 1px solid grey;
+      
+      font-size: 90%;
+  }
+
+  .titlebar {
+      color: grey;
+      float: left;
+  }
+
+  .topic {
+      width: 75%;
+  }
+
+  .icons {
+      width: 5%;
+  }
+
+  .replies {
+      width: 10%;
+  }
+
+  .views {
+      width: 10%;
+  }
+
+  .newpost {
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    width: 40px;
+    height: 40px;
+    /* margin: 1px 3px; */
+  }
+
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  #g-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  #g-button:hover {
+    opacity:1;
+  }
+  
+  .cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+  }
+  
+  .cancelbtn, .signupbtn {
+    float: left;
+    width: 50%;
+  }
+
+  .signup-container {
+    padding: 16px;
+  }
+  
+  .modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: #474e5d;
+    padding-top: 50px;
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 80%; 
+  }
+  
+  
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+  
+  
+  .close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #f44336;
+    cursor: pointer;
+  }
+  
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  
+  @media screen and (max-width: 320px) {
+    .cancelbtn, .signupbtn {
+      width: 100%;
+    }
+  }
