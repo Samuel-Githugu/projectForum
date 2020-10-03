@@ -39,6 +39,14 @@ function categoryDrop() {
 
 window.onclick = function(event) {
     if (event.target == modal1) {
-        modal.style.display = "none";
+        modal1.style.display = "none";
+    }
+}
+
+var modal2 = document.getElementById('id02');
+
+window.onclick = function(event) {
+    if (event.target == modal2) {
+        modal2.style.display = "none";
     }
 }

@@ -13,8 +13,8 @@
        <div class="forms">
          <div class="signup-form">
             <div id="id01" class="modal1">
-               <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal"></span>
-           <form class="modal-content" action="/action_page.php" method="POST" border:1px solid #ccc">
+               <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">❌</span>
+           <form class="modal-content" action="index.html" method="POST" border:1px solid #ccc">
                <div class="signup-container">
                  <h1>Sign Up</h1>
                  <p>Please fill in this form to create an account.</p>
@@ -48,8 +48,8 @@
 
          <div class="login-form">
             <div id="id02" class="modal2">
-               <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal"></span>
-            <form action="/action_page.php" method="POST">
+               <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">❌</span>
+            <form action="index.html" method="POST">
                <div class="row">
                  <h2 style="text-align:center">Login with Social Media or Manually</h2>
                  <div class="vl">
@@ -60,11 +60,11 @@
                    <a href="#" class="fb btn">
                      <i class="fa fa-facebook fa-fw"></i> Login with Facebook
                    </a>
-                   <a href="#" class="twitter btn">
-                     <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+                   <a href="#" class="github btn">
+                     <i class="fa fa-github fa-fw"></i> Login with Github
                    </a>
                    <a href="#" class="google btn">
-                     <i class="fa fa-google fa-fw"></i> Login with Google+
+                     <i class="fa fa-google fa-fw"></i> Login with Google
                    </a>
                  </div>
            
@@ -83,7 +83,7 @@
              <div class="bottom-container">
                <div class="row">
                  <div class="col">
-                   <a href="#" style="color:white" class="btn">Sign up</a>
+                   <a href="#" style="color:white" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</a>
                  </div>
                  <div class="col">
                    <a href="#" style="color:white" class="btn">Forgot password?</a>
@@ -121,7 +121,7 @@
          
           <!-- <a href="SignupAndLogin.html"><button> Register/Log In </button></a> -->
           <button onclick="document.getElementById('id01').style.display='block'" class="button-s">Sign Up</button>
-          <button onclick="document.getElementById('id02').style.display='block'">👤 Log In</button>
+          <button onclick="document.getElementById('id02').style.display='block'">Log In</button>
 
         </div>
      </header>
